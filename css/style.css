@@ -1,0 +1,94 @@
+.wrapper {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  max-width: 400px;
+  margin: 100px auto;
+  position: relative;
+}
+.wrapper h3 {
+  text-align: center;
+}
+.wrapper img {
+  max-width: 500px;
+}
+
+fieldset {
+  border: 3px solid black;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.btn {
+  position: absolute;
+  bottom: -50px;
+  left: 140px;
+}
+.btn button {
+  width: 120px;
+  height: 30px;
+  transition: all ease 0.5s;
+}
+.btn button:hover {
+  cursor: pointer;
+  background-color: bisque;
+}
+
+.modal {
+  width: 600px;
+  height: 110px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+  left: -100px;
+  padding: 10px 20px;
+  top: 30px;
+  transform: translate(-300%);
+}
+.modal button {
+  transition: all ease 0.5s;
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+}
+.modal button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.modal .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.modal.active {
+  -webkit-animation: move 1.2s linear;
+          animation: move 1.2s linear;
+  transform: translate(0%);
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: translate(-300%);
+  }
+  50% {
+    transform: translate(-200%);
+  }
+  75% {
+    transform: translate(-100%);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-300%);
+  }
+  50% {
+    transform: translate(-200%);
+  }
+  75% {
+    transform: translate(-100%);
+  }
+}/*# sourceMappingURL=style.css.map */

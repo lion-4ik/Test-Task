@@ -1,0 +1,80 @@
+.wrapper {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 400px;
+    margin: 100px auto;
+    position:relative;
+    h3 {
+        text-align: center;
+    }
+    img {
+        max-width: 500px;
+    }
+}
+
+fieldset {
+    border: 3px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.btn {
+    position:absolute;
+    bottom: -50px;
+    left: 140px;
+    button {
+        width: 120px;
+        height: 30px;
+        transition: all ease 0.5s;
+        &:hover {
+            cursor: pointer;
+            background-color: bisque;
+        }
+
+    }
+    
+}
+.modal {
+    width: 600px;
+    height:110px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    position:absolute;
+    left: -100px;
+    padding: 10px 20px;
+    top: 30px;
+    transform: translate(-300%);
+    button {
+        transition: all ease 0.5s;
+        margin-left: 10px;
+        width: 80px;
+        height:30px;
+        &:hover {
+            background-color: black;
+            color:white;
+            cursor: pointer;
+        }
+    }
+    .buttons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: end;
+    }
+}
+.modal.active {
+    animation: move 1.2s linear;
+    transform: translate(0%);
+}
+@keyframes move {
+    0% {
+        transform: translate(-300%);
+    }
+    50% {
+        transform: translate(-200%);
+    }
+    75% {
+        transform: translate(-100%);
+    }
+    
+}
